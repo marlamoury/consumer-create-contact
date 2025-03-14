@@ -66,7 +66,8 @@
               "RelativeToolTip": "Dockerfile",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-27T16:40:32.356Z"
+              "WhenOpened": "2025-02-27T16:40:32.356Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -88,7 +89,7 @@
               "RelativeDocumentMoniker": "Worker.cs",
               "ToolTip": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\Worker.cs",
               "RelativeToolTip": "Worker.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAArAAAA",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAIQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T16:39:19.964Z",
               "EditorCaption": ""
