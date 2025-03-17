@@ -50,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -61,6 +65,14 @@
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "Microsoft.Graph": {
+              "target": "Package",
+              "version": "[5.73.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.2.0, )"
             },
             "RabbitMQ.Client": {
               "target": "Package",

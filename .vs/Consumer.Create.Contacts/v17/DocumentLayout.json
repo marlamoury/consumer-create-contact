@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E72265F2-BB05-4338-8A28-50C7B04257E7}|Consumer.Create.Contact.csproj|c:\\users\\marla\\source\\repos\\consumer-create-contact\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E72265F2-BB05-4338-8A28-50C7B04257E7}|Consumer.Create.Contact.csproj|solutionrelative:worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E72265F2-BB05-4338-8A28-50C7B04257E7}|Consumer.Create.Contact.csproj|c:\\users\\marla\\source\\repos\\consumer-create-contact\\infrastructure\\persistence\\contatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E72265F2-BB05-4338-8A28-50C7B04257E7}|Consumer.Create.Contact.csproj|solutionrelative:infrastructure\\persistence\\contatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E72265F2-BB05-4338-8A28-50C7B04257E7}|Consumer.Create.Contact.csproj|c:\\users\\marla\\source\\repos\\consumer-create-contact\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{E72265F2-BB05-4338-8A28-50C7B04257E7}|Consumer.Create.Contact.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{E72265F2-BB05-4338-8A28-50C7B04257E7}|Consumer.Create.Contact.csproj|c:\\users\\marla\\source\\repos\\consumer-create-contact\\infrastructure\\messaging\\rabbitmqconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E72265F2-BB05-4338-8A28-50C7B04257E7}|Consumer.Create.Contact.csproj|solutionrelative:infrastructure\\messaging\\rabbitmqconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E72265F2-BB05-4338-8A28-50C7B04257E7}|Consumer.Create.Contact.csproj|c:\\users\\marla\\source\\repos\\consumer-create-contact\\application\\dtos\\contatodtoextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E72265F2-BB05-4338-8A28-50C7B04257E7}|Consumer.Create.Contact.csproj|solutionrelative:application\\dtos\\contatodtoextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E72265F2-BB05-4338-8A28-50C7B04257E7}|Consumer.Create.Contact.csproj|c:\\users\\marla\\source\\repos\\consumer-create-contact\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E72265F2-BB05-4338-8A28-50C7B04257E7}|Consumer.Create.Contact.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E72265F2-BB05-4338-8A28-50C7B04257E7}|Consumer.Create.Contact.csproj|c:\\users\\marla\\source\\repos\\consumer-create-contact\\worker\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E72265F2-BB05-4338-8A28-50C7B04257E7}|Consumer.Create.Contact.csproj|solutionrelative:worker\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E72265F2-BB05-4338-8A28-50C7B04257E7}|Consumer.Create.Contact.csproj|c:\\users\\marla\\source\\repos\\consumer-create-contact\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E72265F2-BB05-4338-8A28-50C7B04257E7}|Consumer.Create.Contact.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,40 +70,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\Dockerfile",
-              "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\Dockerfile",
-              "RelativeToolTip": "Dockerfile",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-02-27T16:40:32.356Z",
+              "DocumentIndex": 2,
+              "Title": "ContatoDtoExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\Application\\DTOs\\ContatoDtoExtensions.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\ContatoDtoExtensions.cs",
+              "ToolTip": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\Application\\DTOs\\ContatoDtoExtensions.cs",
+              "RelativeToolTip": "Application\\DTOs\\ContatoDtoExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T22:56:50.153Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "ContatoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\Infrastructure\\Persistence\\ContatoRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\ContatoRepository.cs",
+              "ToolTip": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\Infrastructure\\Persistence\\ContatoRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\ContatoRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T22:36:59.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAACDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-17T22:33:54.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RabbitMQConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\Infrastructure\\Messaging\\RabbitMQConsumer.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Messaging\\RabbitMQConsumer.cs",
+              "ToolTip": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\Infrastructure\\Messaging\\RabbitMQConsumer.cs",
+              "RelativeToolTip": "Infrastructure\\Messaging\\RabbitMQConsumer.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAqwEsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T22:30:15.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Worker.cs",
+              "DocumentMoniker": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\Worker\\Worker.cs",
+              "RelativeDocumentMoniker": "Worker\\Worker.cs",
+              "ToolTip": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\Worker\\Worker.cs",
+              "RelativeToolTip": "Worker\\Worker.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwBcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T22:17:44.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T16:39:23.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Worker.cs",
-              "DocumentMoniker": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\Worker.cs",
-              "RelativeDocumentMoniker": "Worker.cs",
-              "ToolTip": "C:\\Users\\marla\\source\\repos\\consumer-create-contact\\Worker.cs",
-              "RelativeToolTip": "Worker.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAAAIQAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T16:39:19.964Z",
+              "WhenOpened": "2025-03-17T22:17:13.993Z",
               "EditorCaption": ""
             }
           ]
