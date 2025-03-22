@@ -24,7 +24,7 @@ namespace Consumer.Create.Contact.Application.DTOs
         [JsonPropertyName("regiao")]
         public int Regiao { get; set; }
 
-        [JsonPropertyName("createdAt")]
-        public DateTime CreatedAt { get; set; }
+        [JsonPropertyName("DataHoraRegistro")]
+        public DateTime DataHoraRegistro { get; set; }
     }
 }

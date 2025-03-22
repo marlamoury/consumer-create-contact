@@ -17,11 +17,15 @@ namespace Consumer.Create.Contact.Infrastructure.Persistence
 
         public async Task AddContatoAsync(Contato contato)
         {
-            const string query = @"
-        INSERT INTO contatos (nome, telefone, email, ddd, regiao, created_at) 
-        VALUES (@Nome, @Telefone, @Email, @Ddd, @Regiao, @CreatedAt);";
 
-            Console.WriteLine($"Nome: {contato.Nome}, Telefone: {contato.Telefone}, Email: {contato.Email}, DDD: {contato.Ddd}, Região: {contato.Regiao}, CriadoEm: {contato.CreatedAt}");
+            // Garantir que a DataHoraRegistro seja atualizada antes de salvar
+            contato.DataHoraRegistro = DateTime.UtcNow;
+
+            const string query = @"
+            INSERT INTO contatos (nome, telefone, email, ddd, regiao, DataHoraRegistro) 
+            VALUES (@Nome, @Telefone, @Email, @Ddd, @Regiao, @DataHoraRegistro);";
+
+            Console.WriteLine($"Nome: {contato.Nome}, Telefone: {contato.Telefone}, Email: {contato.Email}, DDD: {contato.Ddd}, Região: {contato.Regiao}, CriadoEm: {contato.DataHoraRegistro}");
 
             using var connection = new MySqlConnection(_connectionString);
             await connection.ExecuteAsync(query, contato);

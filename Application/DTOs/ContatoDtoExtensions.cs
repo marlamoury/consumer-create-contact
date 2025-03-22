@@ -17,7 +17,7 @@ namespace Consumer.Create.Contact.Application.DTOs
                 Email = dto.Email,
                 Ddd = dto.Ddd,
                 Regiao = dto.Regiao,
-                CreatedAt = dto.CreatedAt
+                DataHoraRegistro = dto.DataHoraRegistro
             };
         }
     }

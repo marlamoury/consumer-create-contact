@@ -19,24 +19,31 @@ namespace Consumer.Create.Contact.Infrastructure.Messaging
     {
         private readonly ILogger<RabbitMQConsumer> _logger;
         private readonly IServiceProvider _serviceProvider;
+        private readonly RabbitMQSettings _rabbitMqSettings;
         private IConnection _connection;
         private IModel _channel;
-        private const string QUEUE_NAME = "fila_criar_contato";
 
-        public RabbitMQConsumer(ILogger<RabbitMQConsumer> logger, IServiceProvider serviceProvider)
+        public RabbitMQConsumer(ILogger<RabbitMQConsumer> logger, IServiceProvider serviceProvider, RabbitMQSettings rabbitMqSettings)
         {
             _logger = logger;
             _serviceProvider = serviceProvider;
-
-            var factory = new ConnectionFactory() { HostName = "localhost" };
+            _rabbitMqSettings = rabbitMqSettings;
 
             try
             {
+                var factory = new ConnectionFactory()
+                {
+                    HostName = _rabbitMqSettings.Host,
+                    UserName = _rabbitMqSettings.Username,
+                    Password = _rabbitMqSettings.Password
+                };
+
                 _connection = factory.CreateConnection();
                 _channel = _connection.CreateModel();
-                _channel.QueueDeclare(queue: QUEUE_NAME, durable: true, exclusive: false, autoDelete: false, arguments: null);
+                _channel.QueueDeclare(queue: _rabbitMqSettings.QueueName, durable: true, exclusive: false, autoDelete: false, arguments: null);
 
-                _logger.LogInformation("Conectado ao RabbitMQ e aguardando mensagens na fila '{0}'...", QUEUE_NAME);
+                _logger.LogInformation("Conectado ao RabbitMQ em {0} e aguardando mensagens na fila '{1}'...",
+                    _rabbitMqSettings.Host, _rabbitMqSettings.QueueName);
             }
             catch (Exception ex)
             {
@@ -57,7 +64,6 @@ namespace Consumer.Create.Contact.Infrastructure.Messaging
 
                     _logger.LogInformation("Mensagem recebida: {0}", messageJson);
 
-                    // Extrai a propriedade "message" do JSON antes de desserializar
                     var jsonObject = JsonNode.Parse(messageJson);
                     var messageNode = jsonObject?["message"];
 
@@ -66,7 +72,7 @@ namespace Consumer.Create.Contact.Infrastructure.Messaging
                         var contatoJson = messageNode.ToString();
                         var contato = JsonSerializer.Deserialize<ContatoDto>(contatoJson, new JsonSerializerOptions
                         {
-                            PropertyNameCaseInsensitive = true // Ignora diferença entre maiúsculas e minúsculas
+                            PropertyNameCaseInsensitive = true
                         });
 
                         if (contato != null)
@@ -75,7 +81,6 @@ namespace Consumer.Create.Contact.Infrastructure.Messaging
                             var contatoService = scope.ServiceProvider.GetRequiredService<IContatoService>();
 
                             var contatoEntity = contato.ToEntity();
-
                             await contatoService.SalvarContatoAsync(contatoEntity);
 
                             _channel.BasicAck(ea.DeliveryTag, false);
@@ -97,7 +102,7 @@ namespace Consumer.Create.Contact.Infrastructure.Messaging
                 }
             };
 
-            _channel.BasicConsume(queue: QUEUE_NAME, autoAck: false, consumer: consumer);
+            _channel.BasicConsume(queue: _rabbitMqSettings.QueueName, autoAck: false, consumer: consumer);
             return Task.CompletedTask;
         }
 
@@ -108,5 +113,13 @@ namespace Consumer.Create.Contact.Infrastructure.Messaging
             _connection?.Close();
             base.Dispose();
         }
+    }
+
+    public class RabbitMQSettings
+    {
+        public string Host { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+        public string QueueName { get; set; } = string.Empty;
     }
 }
