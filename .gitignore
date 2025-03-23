@@ -1,0 +1,40 @@
+# Arquivos e diretórios de compilação
+bin/
+obj/
+.vs/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.db
+*.db-shm
+*.db-wal
+
+# Diretórios temporários
+temp/
+logs/
+*.tmp
+*.log
+
+# Arquivos do Visual Studio e VS Code
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.idea/
+*.csproj.user
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+
+# Diretórios de pacotes e publicações
+artifacts/
+packages/
+publish/
+.nuget/
+
+# Logs e relatórios
+TestResults/
+Coverage/
+ECHO est� ativado.
